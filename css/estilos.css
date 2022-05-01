@@ -3,7 +3,8 @@
     margin: 0;
 }
 
-header {
+
+/*header {
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -35,6 +36,7 @@ a {
     text-decoration: none;
     color: #000000;
 }
+*/
 
 .fa-bars:before,
 .fa-navicon:before {
