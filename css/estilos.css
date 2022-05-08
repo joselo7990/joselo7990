@@ -59,7 +59,7 @@ h1 {
 h2 {
     color: rgb(13, 115, 21);
     size: 230px;
-    text-decoration: line-through
+    text-decoration: none
 }
 
 p {
@@ -199,6 +199,7 @@ h1 {
 .mitad {
     display: flex;
     align-items: center;
+    margin: 1rem;
 }
 
 .mitad_left,
@@ -345,6 +346,30 @@ h1 {
     margin: 0 33%;
 }
 
+.footer {
+    display: flex;
+    background-color: #E63946;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid;
+    border-color: #000000;
+}
+
+.footer__copy {
+    color: black;
+    font-weight: 1000;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: black;
+}
+
+.footer__logo {
+    font-size: xxx-large;
+    align-items: flex-end;
+}
+
 
 /*media* /* A las vista menores de 1024px */
 
@@ -357,6 +382,11 @@ h1 {
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-template-areas: "imagen1 imagen2" "imagen1 imagen3" "imagen4 imagen5" "imagen6 imagen7";
+    }
+    .discos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "disco1 disco2" "disco3 disco4" "disco5 disco6"
     }
 }
 
@@ -405,10 +435,15 @@ h1 {
         flex-direction: column;
     }
     .discos {
-        display: inherit
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "disco1" "disco2" "disco3" "disco4" "disco5" "disco6"
     }
     .questionario {
         margin: 5px;
+    }
+    .mitad {
+        flex-direction: column;
     }
 }
 
@@ -421,28 +456,4 @@ h1 {
 
 .zoom:hover {
     transform: scale(1);
-}
-
-.footer {
-    display: flex;
-    background-color: #E63946;
-    padding: 1rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: solid;
-    border-color: #000000;
-}
-
-.footer__copy {
-    color: black;
-    font-weight: 1000;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: black;
-}
-
-.footer__logo {
-    font-size: xxx-large;
-    align-items: flex-end;
 }
