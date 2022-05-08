@@ -375,7 +375,7 @@ h1 {
 
 @media screen and (max-width: 1020px) {
     body {
-        background-color: rgb(101, 101, 0);
+        background-color: rgb(240, 240, 213);
     }
     .galeria {
         display: grid;
