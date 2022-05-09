@@ -368,6 +368,7 @@ h1 {
 .footer__logo {
     font-size: xxx-large;
     align-items: flex-end;
+    text-decoration: none;
 }
 
 
