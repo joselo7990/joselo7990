@@ -1,7 +1,8 @@
-* {
+/* {
     padding: 0;
     margin: 0;
 }
+/*
 
 
 /*header {
@@ -38,15 +39,17 @@ a {
 }
 */
 
-.fa-bars:before,
+
+/*.fa-bars:before,
 .fa-navicon:before {
     display: none;
-}
+}*/
 
 
 /**body*/
 
-body {
+
+/*body {
     background-color: #2F2F2F;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -71,11 +74,13 @@ p {
     font-size: 20px;
     color: rgb(0, 0, 0);
 }
+*/
 
 
 /******************** INDEX*************/
 
-.videocontainer {
+
+/*.videocontainer {
     display: flex;
     align-items: center;
 }
@@ -96,9 +101,7 @@ iframe {
     font-size: 50px;
     font-style: normal;
     font-weight: bold;
-    /*comentario- 300-500-700 que traje*/
     text-align: center;
-    /*pone en centro, izq, derecha*/
 }
 
 h1 {
@@ -110,10 +113,13 @@ h1 {
     text-align: center;
     justify-content: center;
 }
+*/
 
 
 /* *****************FOTOS*********/
 
+
+/*
 .galeria {
     padding: 1rem;
     margin: 1rem;
@@ -193,7 +199,7 @@ h1 {
     }
 }
 
-
+/*
 /********************HISTORIA***********************/
 
 .mitad {

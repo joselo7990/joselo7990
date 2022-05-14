@@ -1,0 +1,14 @@
+.videocontainer {
+    display: flex;
+    align-items: center;
+    .videoleft,
+    .videoright {
+        width: 100%;
+    }
+    iframe {
+        width: 80%;
+        height: 420px;
+        align-items: center;
+        margin: 50px;
+    }
+}
