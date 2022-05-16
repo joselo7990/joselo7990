@@ -202,7 +202,8 @@ h1 {
 /*
 /********************HISTORIA***********************/
 
-.mitad {
+
+/*.mitad {
     display: flex;
     align-items: center;
     margin: 1rem;
@@ -220,7 +221,8 @@ h1 {
 
 /******************DISCOGRAFIA**********************/
 
-.discos {
+
+/*.discos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -270,6 +272,7 @@ h1 {
     justify-content: center;
     margin-bottom: 20px;
 }
+/*animaciones discos*/
 
 .shake-bottom:hover {
     -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
@@ -347,12 +350,14 @@ h1 {
 
 /*****************CUESTIONARIO********************/
 
-.questionario {
+
+/*.questionario {
     color: white;
     margin: 0 33%;
 }
 
-.footer {
+
+/*.footer {
     display: flex;
     background-color: #E63946;
     padding: 1rem 1rem;
@@ -375,10 +380,13 @@ h1 {
     font-size: xxx-large;
     align-items: flex-end;
 }
+*/
 
 
 /*media* /* A las vista menores de 1024px */
 
+
+/*
 @media screen and (max-width: 1020px) {
     body {
         background-color: rgb(101, 101, 0);
@@ -395,11 +403,13 @@ h1 {
         grid-template-areas: "disco1 disco2" "disco3 disco4" "disco5 disco6"
     }
 }
+/*
 
 
 /*media* /* A las vista menores de 600px */
 
-@media screen and (max-width: 600px) {
+
+/*@media screen and (max-width: 600px) {
     body {
         background-color: #332E35;
     }
@@ -452,14 +462,16 @@ h1 {
         flex-direction: column;
     }
 }
+*/
 
 
 /* EFECTOS IMAGENES*/
 
-.zoom {
+
+/*.zoom {
     transition: transform .3s;
 }
 
 .zoom:hover {
     transform: scale(1);
-}
+}*/

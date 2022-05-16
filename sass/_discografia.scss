@@ -1,37 +1,48 @@
-.scale-up-center {
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.discos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "disco1 disco2 disco3" "disco4 disco5 disco6";
+    gap: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    justify-items: center;
+    .discos__galeria {
+        display: flex;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        position: relative;
+    }
+    .discos--posiciones1 {
+        grid-area: disco1;
+    }
+    .discos--posiciones2 {
+        grid-area: disco2;
+    }
+    .discos--posiciones3 {
+        grid-area: disco3;
+    }
+    .discos--posiciones4 {
+        grid-area: disco4;
+    }
+    .discos--posiciones5 {
+        grid-area: disco5;
+    }
+    .discos--posiciones6 {
+        grid-area: disco6;
+    }
+    .tabla {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 
-@-webkit-keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
 
-@keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-.zoom {
-    transition: transform .3s;
-}
-
-.zoom:hover {
-    transform: scale(1);
-}
+/*animaciones discos*/
 
 .shake-bottom:hover {
     -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;

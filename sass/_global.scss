@@ -39,6 +39,17 @@ h3 {
     @extend h2
 }
 
+@mixin h1 ($border) {
+    color: $colorPrimario;
+    background-color: #A9E5BB;
+    width: 250px;
+    border: $border;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
+    justify-content: center;
+}
+
 p {
     color: white;
     size: 150px;

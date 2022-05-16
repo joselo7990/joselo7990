@@ -1,0 +1,14 @@
+.mitad {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.mitad_left,
+.mitad_right {
+    width: 50%;
+}
+
+.mitad_right {
+    justify-content: flex-end;
+}
