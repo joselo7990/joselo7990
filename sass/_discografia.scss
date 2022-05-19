@@ -3,9 +3,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "disco1 disco2 disco3" "disco4 disco5 disco6";
-    gap: 2rem;
-    margin: 2rem;
-    padding: 2rem;
+    gap: map-get($map: $sizes, $key: "w2");
+    margin: map-get($map: $sizes, $key: "w2");
+    padding: map-get($map: $sizes, $key: "w2");
     justify-content: center;
     justify-items: center;
     .discos__galeria {
@@ -34,15 +34,11 @@
         grid-area: disco6;
     }
     .tabla {
+        @include flexmix;
         width: auto;
-        display: flex;
-        justify-content: center;
         margin-bottom: 20px;
     }
 }
-
-
-/*animaciones discos*/
 
 .shake-bottom:hover {
     -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;

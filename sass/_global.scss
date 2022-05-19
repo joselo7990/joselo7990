@@ -32,11 +32,11 @@ h1 {
 h2 {
     color: $colorSecundario;
     size: 230px;
-    text-decoration: none
+    text-decoration: none;
 }
 
 h3 {
-    @extend h2
+    @extend h2;
 }
 
 @mixin h1 ($border) {

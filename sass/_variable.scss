@@ -1,2 +1,7 @@
 $colorPrimario:hsl(0, 0%, 18%);
-$colorSecundario : rgb(37, 179, 39);
+$colorSecundario: rgb(37, 179, 39);
+$sizes: ( "w1": 1rem, "w2": 2rem, "w3": 3rem, );
+@mixin flexmix {
+    display: flex;
+    justify-content: center;
+}
