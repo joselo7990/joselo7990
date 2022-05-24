@@ -1,89 +1,98 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #2F2F2F;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
-
-h1 {
-    color: $colorPrimario;
-    background-color: #A9E5BB;
-    width: 250px;
-    border: 2px solid black;
-    padding: 30px;
-    margin: 30px auto;
-    text-align: center;
-    justify-content: center;
-}
-
-.titulo {
-    font-size: 50px;
-    font-style: normal;
-    font-weight: bold;
-    /*comentario- 300-500-700 que traje*/
-    text-align: center;
-    /*pone en centro, izq, derecha*/
-}
-
-h2 {
-    color: $colorSecundario;
-    size: 230px;
-    text-decoration: none;
-}
-
-h3 {
-    @extend h2;
-}
-
-@mixin h1 ($border) {
-    color: $colorPrimario;
-    background-color: #A9E5BB;
-    width: 250px;
-    border: $border;
-    padding: 30px;
-    margin: 30px auto;
-    text-align: center;
-    justify-content: center;
-}
-
-p {
-    color: white;
-    size: 150px;
-}
-
-.parrafo-mediano {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-}
-
-.fa-bars:before,
-.fa-navicon:before {
-    display: none;
-}
-
-.footer {
-    display: flex;
-    background-color: #E63946;
-    padding: 1rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: solid;
-    border-color: #000000;
-    .footer__copy {
-        color: black;
-        font-weight: 1000;
-        text-decoration-line: underline;
-        text-decoration-style: double;
-        text-decoration-color: black;
+    * {
+        padding: 0;
+        margin: 0;
     }
-    .footer__logo {
-        font-size: xxx-large;
-        align-items: flex-end;
+    
+    body {
+        background-color: #2F2F2F;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+    
+    h1 {
+        color: $colorPrimario;
+        background-color: #A9E5BB;
+        width: 250px;
+        border: 2px solid black;
+        padding: 30px;
+        margin: 30px auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .titulo {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: bold;
+        /*comentario- 300-500-700 que traje*/
+        text-align: center;
+        /*pone en centro, izq, derecha*/
+    }
+    
+    h2 {
+        color: $colorSecundario;
+        size: 230px;
         text-decoration: none;
     }
-}
+    
+    h3 {
+        @extend h2;
+    }
+    
+    @mixin h1 ($border) {
+        color: $colorPrimario;
+        background-color: #A9E5BB;
+        width: 250px;
+        border: $border;
+        padding: 30px;
+        margin: 30px auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    p {
+        color: white;
+        size: 150px;
+    }
+    
+    .parrafo-mediano {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .fa-bars:before,
+    .fa-navicon:before {
+        display: none;
+    }
+    
+    .fa-spotify:before {
+        color: black;
+    }
+    
+    .fa-instagram:before {
+        color: black;
+    }
+    
+    .footer {
+        display: flex;
+        background-color: #E63946;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: solid;
+        border-color: #000000;
+        .footer__copy {
+            color: black;
+            font-weight: 1000;
+            text-decoration-line: underline;
+            text-decoration-style: double;
+            text-decoration-color: black;
+        }
+        .footer__logo {
+            font-size: xxx-large;
+            align-items: flex-end;
+            text-decoration: none;
+            color: #000000;
+        }
+    }
