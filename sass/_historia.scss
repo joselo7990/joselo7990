@@ -12,3 +12,26 @@
 .mitad_right {
     justify-content: flex-end;
 }
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "card1 card2 card3 card4";
+}
+
+.card__hijo--1 {
+    grid-area: card1;
+}
+
+.card__hijo--2 {
+    grid-area: card2;
+}
+
+.card__hijo--3 {
+    grid-area: card3;
+}
+
+.card__hijo--4 {
+    card4;
+}
