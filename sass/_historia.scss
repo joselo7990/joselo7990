@@ -1,7 +1,6 @@
 .mitad {
     display: flex;
     align-items: center;
-    margin: 1rem;
 }
 
 .mitad_left,
@@ -33,5 +32,10 @@
 }
 
 .card__hijo--4 {
-    card4;
+    grid-area: card4;
+}
+
+.tabla {
+    display: flex;
+    justify-content: center;
 }

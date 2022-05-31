@@ -61,6 +61,17 @@
     .videocontainer {
         flex-direction: column;
     }
+    .videocontainer iframe {
+        width: 80%;
+        height: 420px;
+        align-items: center;
+    }
+    .videocontainer .videoleft,
+    .videocontainer .videoright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .discos {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
