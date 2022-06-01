@@ -207,13 +207,19 @@ p {
   width: 50%; }
 
 .mitad_right {
-  justify-content: flex-end; }
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .cartas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "card1 card2 card3 card4"; }
+  grid-template-areas: "card1 card2 card3 card4";
+  display: flex;
+  justify-content: center;
+  gap: 1rem; }
 
 .card__hijo--1 {
   grid-area: card1; }
