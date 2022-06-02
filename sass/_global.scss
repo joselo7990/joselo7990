@@ -9,15 +9,37 @@
         margin: 0;
     }
     
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: white;
+        font-weight: bolder;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        transition: 0.3s;
+    }
+    
     h1 {
         color: $colorPrimario;
-        background-color: #A9E5BB;
-        width: 250px;
-        border: 2px solid black;
-        padding: 30px;
-        margin: 30px auto;
         text-align: center;
         justify-content: center;
+        text-decoration: solid;
+         ::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 5px;
+            background-color: white;
+        }
+    }
+    
+    .header-area {
+        width: 100%;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    
+    .index {
+        background-image: url(../imagenes/entuszapatos.jpg);
     }
     
     .titulo {
@@ -82,10 +104,10 @@
         align-items: center;
         border: solid;
         border-color: #000000;
+        margin-top: 30px;
         .footer__copy {
             color: black;
             font-weight: 1000;
-            text-decoration-line: underline;
             text-decoration-style: double;
             text-decoration-color: black;
         }
@@ -94,5 +116,18 @@
             align-items: flex-end;
             text-decoration: none;
             color: #000000;
+        }
+    }
+    
+    .table-full {
+        width: 100%;
+        th {
+            color: #E63946;
+        }
+        tr {
+            border-bottom: 1px solid #E63946;
+        }
+        td {
+            padding: 5px 10px;
         }
     }
