@@ -265,11 +265,12 @@ p {
     grid-area: disco5; }
   .discos .discos--posiciones6 {
     grid-area: disco6; }
-  .discos .tabla {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    margin-bottom: 20px; }
+
+.tabla {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin-bottom: 20px; }
 
 .shake-bottom:hover {
   -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;

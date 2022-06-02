@@ -1,114 +1,115 @@
-.discos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "disco1 disco2 disco3" "disco4 disco5 disco6";
-    gap: map-get($map: $sizes, $key: "w2");
-    margin: map-get($map: $sizes, $key: "w2");
-    padding: map-get($map: $sizes, $key: "w2");
-    justify-content: center;
-    justify-items: center;
-    .discos__galeria {
-        display: flex;
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        position: relative;
-    }
-    .discos--posiciones1 {
-        grid-area: disco1;
-    }
-    .discos--posiciones2 {
-        grid-area: disco2;
-    }
-    .discos--posiciones3 {
-        grid-area: disco3;
-    }
-    .discos--posiciones4 {
-        grid-area: disco4;
-    }
-    .discos--posiciones5 {
-        grid-area: disco5;
-    }
-    .discos--posiciones6 {
-        grid-area: disco6;
-    }
-    .tabla {
-        @include flexmix;
-        width: auto;
-        margin-bottom: 20px;
-    }
-}
-
-.shake-bottom:hover {
-    -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-}
-
-@-webkit-keyframes shake-bottom {
-    0%,
-    100% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transform-origin: 50% 100%;
-        transform-origin: 50% 100%;
-    }
-    10% {
-        -webkit-transform: rotate(2deg);
-        transform: rotate(2deg);
-    }
-    20%,
-    40%,
-    60% {
-        -webkit-transform: rotate(-4deg);
-        transform: rotate(-4deg);
-    }
-    30%,
-    50%,
-    70% {
-        -webkit-transform: rotate(4deg);
-        transform: rotate(4deg);
-    }
-    80% {
-        -webkit-transform: rotate(-2deg);
-        transform: rotate(-2deg);
-    }
-    90% {
-        -webkit-transform: rotate(2deg);
-        transform: rotate(2deg);
-    }
-}
-
-@keyframes shake-bottom {
-    0%,
-    100% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transform-origin: 50% 100%;
-        transform-origin: 50% 100%;
-    }
-    10% {
-        -webkit-transform: rotate(2deg);
-        transform: rotate(2deg);
-    }
-    20%,
-    40%,
-    60% {
-        -webkit-transform: rotate(-4deg);
-        transform: rotate(-4deg);
-    }
-    30%,
-    50%,
-    70% {
-        -webkit-transform: rotate(4deg);
-        transform: rotate(4deg);
-    }
-    80% {
-        -webkit-transform: rotate(-2deg);
-        transform: rotate(-2deg);
-    }
-    90% {
-        -webkit-transform: rotate(2deg);
-        transform: rotate(2deg);
-    }
-}
+        .discos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: "disco1 disco2 disco3" "disco4 disco5 disco6";
+            gap: map-get($map: $sizes, $key: "w2");
+            margin: map-get($map: $sizes, $key: "w2");
+            padding: map-get($map: $sizes, $key: "w2");
+            justify-content: center;
+            justify-items: center;
+            .discos__galeria {
+                display: flex;
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                position: relative;
+            }
+            .discos--posiciones1 {
+                grid-area: disco1;
+            }
+            .discos--posiciones2 {
+                grid-area: disco2;
+            }
+            .discos--posiciones3 {
+                grid-area: disco3;
+            }
+            .discos--posiciones4 {
+                grid-area: disco4;
+            }
+            .discos--posiciones5 {
+                grid-area: disco5;
+            }
+            .discos--posiciones6 {
+                grid-area: disco6;
+            }
+        }
+        
+        .tabla {
+            @include flexmix;
+            width: auto;
+            margin-bottom: 20px;
+        }
+        
+        .shake-bottom:hover {
+            -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
+        
+        @-webkit-keyframes shake-bottom {
+            0%,
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+            }
+            10% {
+                -webkit-transform: rotate(2deg);
+                transform: rotate(2deg);
+            }
+            20%,
+            40%,
+            60% {
+                -webkit-transform: rotate(-4deg);
+                transform: rotate(-4deg);
+            }
+            30%,
+            50%,
+            70% {
+                -webkit-transform: rotate(4deg);
+                transform: rotate(4deg);
+            }
+            80% {
+                -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+            }
+            90% {
+                -webkit-transform: rotate(2deg);
+                transform: rotate(2deg);
+            }
+        }
+        
+        @keyframes shake-bottom {
+            0%,
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+            }
+            10% {
+                -webkit-transform: rotate(2deg);
+                transform: rotate(2deg);
+            }
+            20%,
+            40%,
+            60% {
+                -webkit-transform: rotate(-4deg);
+                transform: rotate(-4deg);
+            }
+            30%,
+            50%,
+            70% {
+                -webkit-transform: rotate(4deg);
+                transform: rotate(4deg);
+            }
+            80% {
+                -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+            }
+            90% {
+                -webkit-transform: rotate(2deg);
+                transform: rotate(2deg);
+            }
+        }
