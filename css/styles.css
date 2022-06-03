@@ -115,9 +115,6 @@ h1 {
   padding-top: 5vh;
   padding-bottom: 5vh; }
 
-.index {
-  background-image: url(../imagenes/menu.JPG); }
-
 .titulo {
   font-size: 50px;
   font-style: normal;
@@ -424,4 +421,6 @@ p {
   .questionario {
     margin: 5px; }
   .mitad {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .cartas {
+    display: none; } }
